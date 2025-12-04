@@ -12,6 +12,7 @@ namespace HW_03_13_6_1_2
 
             var words = text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
 
+            #region 1_Задание
             Stopwatch swList = Stopwatch.StartNew();
 
             List<string> list = new List<string>();
@@ -30,6 +31,9 @@ namespace HW_03_13_6_1_2
             }
             swLinkedList.Stop();
             Console.WriteLine("Итоговое время LinkedList: " + swLinkedList.Elapsed.TotalMilliseconds);
+            #endregion
+
+
         }
     }
 }
